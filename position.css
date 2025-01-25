@@ -1,0 +1,20 @@
+.p1{
+    position:relative;
+    border:2px solid plum;
+    top:20px;
+}
+.p2{
+    position:relative;
+    border: 2px solid hotpink;
+    top:20px;
+}
+.p3{
+    position:relative;
+    border: 2px solid royalblue;
+    top:20px;
+}
+.p4{
+    position:relative;
+    border: 2px solid powderblue;
+    top:20px;
+}

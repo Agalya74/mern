@@ -1,0 +1,15 @@
+.one{
+    border: 10px solid hotpink;
+    position: relative;
+}
+.two{
+    border: 10px solid paleturquoise;
+    position: relative;
+}
+.three{
+    border: 10px solid bisque;
+    position: relative;
+}
+.container{
+    border: 20px solid teal;
+}

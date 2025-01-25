@@ -1,0 +1,21 @@
+.one{
+    background-color: gray;
+    border:2px solid rgb(47, 255, 182);
+    height: 120px;
+    bottom: 20px;
+  }
+  .two{
+      background-color: aqua;
+      border:2px solid rgb(255, 47, 120);
+      height: 100px;
+      bottom: 20px;
+  }
+  .three{
+      background-color:yellowgreen;
+      border:2px solid orange;
+      height: 100px;
+      bottom: 20px;
+  }
+  .container{
+      border: 220px;
+  }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #333333; /* Dark grey background */
+            color: #F5F5DC; /* Beige for text */
+            height: 100vh;
+            display: flex;
+        }
+
+        /* Split Screen */
+        .left, .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 50px; /* Adds spacing for alignment */
+        }
+
+        .left {
+            animation: slideInFromLeft 1.5s ease-in-out;
+        }
+
+        .right {
+            justify-content: center; /* Center the navbar vertically */
+            align-items: flex-end; /* Align navbar to the right */
+            padding-right: 50px;
+        }
+
+        /* Name and Details */
+        .name {
+            font-size: 3rem;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeUp 1.5s ease-in-out forwards;
+            color: #F5F5DC; /* Beige for the name */
+        }
+
+        .details {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-top: 10px;
+            color: #F5F5DC; /* Beige for the details */
+            opacity: 0;
+            animation: fadeUp 1.5s ease-in-out forwards;
+            animation-delay: 0.3s; /* Delay for a smoother effect */
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #F5F5DC; /* Beige for links */
+            font-size: 1.5rem;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #FFFFFF; /* White hover effect for links */
+        }
+
+        .navbar a::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 0;
+            background-color: #F5F5DC; /* Underline in beige */
+            position: absolute;
+            bottom: -5px; /* Positioned slightly below the text */
+            left: 0;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .navbar a:hover::after {
+            width: 100%; /* Underline expands on hover */
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Left Side: Name and Details -->
+    <div class="left">
+        <div class="name">Agalya</div>
+        <div class="details">Electronics and Communication Engineering Student</div>
+    </div>
+
+    <!-- Right Side: Navigation Bar -->
+    <div class="right">
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</body>
+</html>
